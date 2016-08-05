@@ -1,12 +1,23 @@
-<p>
-  <strong>Dish:</strong>
+<div class="overlay">
+
+<h2>
   <%= @recipe.dish %>
-</p>
+</h2>
 
 <p>
   <strong>Instructions:</strong>
   <%= @recipe.instructions %>
 </p>
 
-<%= link_to 'Edit', edit_recipe_path(@recipe) %> | 
+<h3>Comments</h3>
+<%= render @recipe.comments %>
+
+
+<h3>Add a comment:</h3>
+<%= render 'comments/form' %>
+
+
+<%= link_to 'Edit', edit_recipe_path(@recipe) %> |
 <%= link_to 'Back', recipes_path %>
+
+</div>
