@@ -27,3 +27,13 @@ h1 {
   width: 800px;
   margin: 20px auto;
 }
+.notice {
+  color: white;
+  background-color: green;
+  padding: 10px;
+}
+.alert {
+  color: white;
+  background-color: red;
+  padding: 10px;
+}

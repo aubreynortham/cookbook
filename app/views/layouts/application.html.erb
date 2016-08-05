@@ -11,7 +11,11 @@
 
 
 <body id="chef_pic">
-    <%= yield %>
+  <% flash.each do |type, message| %>
+  <p class="flash <%= type %>"><%= message %></p>
+  <% end %>
+  
+  <%= yield %>
 </body>
 
 </html>

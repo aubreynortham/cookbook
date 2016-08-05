@@ -16,8 +16,10 @@ class RecipesController < ApplicationController
     @recipe = Recipe.new(recipe_params)
 
     if @recipe.save
+      flash[:notice] = "Recipe was successfully created!"
       redirect_to @recipe
     else
+      flash[:alert] = "Your dish needs to be at least 5 characters."
       render 'new'
     end
   end
