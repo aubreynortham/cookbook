@@ -4,6 +4,8 @@ class CreateRecipes < ActiveRecord::Migration[5.0]
       t.string :dish
       t.text :instructions
 
+      # good use of text data type!
+
       t.timestamps
     end
   end
