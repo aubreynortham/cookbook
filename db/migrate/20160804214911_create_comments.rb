@@ -4,7 +4,7 @@ class CreateComments < ActiveRecord::Migration[5.0]
       t.string :commenter
       t.text :body
       t.references :recipe, foreign_key: true
-
+      # thumbsup.png
       t.timestamps
     end
   end
